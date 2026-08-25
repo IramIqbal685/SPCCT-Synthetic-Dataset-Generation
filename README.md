@@ -30,9 +30,17 @@ tifffile
 matplotlib
 openpyxl
 
+## Expected Outputs
+The workflows generate:
+Five-bin synthetic SPCCT images
+Material label maps
+Synthetic Rock digital phantom
+Effective Atomic Number (Zeff) maps
+Electron Density (ED) maps
+Validation and statistical output files
+
 ## Data Availability
 The repository contains the source code required to reproduce the computational workflow. Large generated synthetic datasets and external characterization data are not necessarily included in the repository. Input data that are subject to confidentiality, usage restrictions, or size limitations may be provided separately where permitted.
-
 
 ## Citation
 If you use this code, please cite the associated publication:
