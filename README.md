@@ -1,2 +1,31 @@
-# SPCCT-Synthetic-Dataset-Generation
-Python code for physics-informed synthetic multi-energy spectral photon-counting CT (SPCCT) dataset generation for rock material identification.
+# Physics-Informed Synthetic Dataset Generation for Rock Material Decomposition and Identification using Spectral Photon Counting Computed Tomography (SPCCT)
+## Overview
+This repository contains the code developed for generating physics-informed synthetic Spectral Photon-Counting Computed Tomography (SPCCT) data for rock material analysis.
+
+The repository includes four main workflows:
+1. **LAC Calculation.ipynb** – calculation of material properties, including density, effective atomic number (Zeff), linear attenuation coefficients (LAC) using NIST XCOM data and Calibration & Gaussian Distribution Parameters. 
+2. **Dataset Generation.ipynb** – generation of multi-energy synthetic SPCCT images using weighted LAC (wLAC) values and material probabilities provided in the Excel file `GD with inverse calibrated wLAC`.
+3. **Zeff and ED Map.ipynb** – calculation of Effective Atomic Number (Zeff) and Electron Density (ED) maps from the generated synthetic SPCCT images.
+4. **Rock Digital Phantom.ipynb** – generation of a synthetic rock digital phantom using the same material parameters, followed by Zeff and ED map calculation.
+
+## Repository Supporting Files
+- `Compounds.xlsx`  
+  Input file containing the material compounds, its corresponding elements, densties and Mass fraction to calculate the Effective Atomic Mass, Effective Atomic Number, Electron Density, weighted LAC and Calibration Parameters along with Gaussian Distribution parameters for the compounds.
+
+- `Spectrum_df.xlsx`  
+  Input file containing X-ray spectrum of number of photons at each energy point to calculated the weighted Linear attenuation corfficient.
+  
+- `GD with inverse calibrated wLAC.xlsx`  
+  Input file containing the material compounds, inverse-calibrated weighted LAC values for the five energy bins, and material probabilities for Dataset Generation & Rock Digital Phantom.
+
+## Requirements
+The code was developed in Python using Jupyter Notebook/Google Colab.
+
+**Required packages:**
+numpy
+pandas
+scipy
+scikit-image
+tifffile
+matplotlib
+openpyxl
