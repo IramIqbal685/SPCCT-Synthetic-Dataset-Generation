@@ -46,6 +46,11 @@ Effective Atomic Number (Zeff) maps
 Electron Density (ED) maps
 Validation and statistical output files
 
+## Quick Test
+For a quick test, run the Data Generation.ipynb notebook with the number of generated images reduced to:
+NUM_IMAGES = 2
+This will generate one synthetic five-bin SPCCT image and allow verification that the code and input file are working correctly.
+
 ## Data Availability
 The repository contains the source code required to reproduce the computational workflow. Large generated synthetic datasets and external characterization data are not necessarily included in the repository. Input data that are subject to confidentiality, usage restrictions, or size limitations may be provided separately where permitted.
 
