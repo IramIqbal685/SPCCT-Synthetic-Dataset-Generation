@@ -20,7 +20,6 @@ The repository includes four main workflows:
 
 ## Requirements
 The code was developed in Python using Jupyter Notebook/Google Colab.
-
 **Required packages:**
 numpy
 pandas
@@ -29,6 +28,14 @@ scikit-image
 tifffile
 matplotlib
 openpyxl
+
+## How to Use
+Run the notebooks in the following order:
+1. Run LAC Calculation.ipynb to calculate material attenuation properties.
+2. Use the generated/calibrated parameters in GD with inverse calibrated wLAC.xlsx.
+3. Run Data Generation.ipynb to generate the synthetic five-bin SPCCT dataset.
+4. Run ED & Zeff Map.ipynb to generate Zeff and ED maps for the synthetic images.
+5. Run Digital Phantom.ipynb to generate the rock digital phantom and its corresponding Zeff and ED maps.
 
 ## Expected Outputs
 The workflows generate:
