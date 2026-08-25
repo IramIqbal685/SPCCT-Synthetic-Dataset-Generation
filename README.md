@@ -29,3 +29,17 @@ scikit-image
 tifffile
 matplotlib
 openpyxl
+
+## Data Availability
+The repository contains the source code required to reproduce the computational workflow. Large generated synthetic datasets and external characterization data are not necessarily included in the repository. Input data that are subject to confidentiality, usage restrictions, or size limitations may be provided separately where permitted.
+
+
+## Citation
+If you use this code, please cite the associated publication:
+Physics-Informed Synthetic Dataset Generation for Rock Material Decomposition and Identification using Spectral Photon-Counting Computed Tomography. Publication details will be added after acceptance.
+
+## Authors
+Iram Iqbal and co-authors.
+
+## Contact
+For questions regarding the code or research, please contact the corresponding author associated with the related publication.
